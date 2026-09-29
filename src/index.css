@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #e4e4e7;
+  }
+
+  body {
+    background-color: #fafafa;
+    color: #09090b;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.011em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #09090b;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Minimalist Card Base */
+.glass-panel {
+  background: #ffffff;
+  border: 1px solid #e4e4e7;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+}
+
+.glass-panel-heavy {
+  background: #ffffff;
+  border: 1px solid #d4d4d8;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+}
+
+.glass-input {
+  background: #ffffff;
+  border: 1px solid #d4d4d8;
+  border-radius: 8px;
+  color: #09090b;
+  font-size: 0.875rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.glass-input:focus {
+  background: #ffffff;
+  border-color: #09090b;
+  box-shadow: 0 0 0 1px #09090b;
+  outline: none;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #fafafa;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+
+/* System Terminal Output */
+.terminal-window {
+  background: #09090b;
+  border: 1px solid #27272a;
+  border-radius: 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
